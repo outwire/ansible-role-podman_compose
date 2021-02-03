@@ -1,6 +1,10 @@
 Ansible Role Podman Compose
 =========
 
+![ci](https://github.com/outwire/ansible-role-podman_compose/workflows/ci/badge.svg)
+![quality](https://img.shields.io/ansible/quality/52935)
+![license](https://img.shields.io/github/license/outwire/ansible-role-podman_compose)
+
 Install podman-compose
 
 Role Variables
