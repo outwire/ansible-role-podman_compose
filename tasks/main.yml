@@ -1,0 +1,13 @@
+---
+- name: Install podman-compose from git
+  get_url:
+    url: https://raw.githubusercontent.com/containers/podman-compose/{{ podman_compose_version_git }}/podman_compose.py
+    dest: "{{ podman_compose_path }}"
+    mode: "755"
+  when: podman_compose_install_method == 'git'
+
+- name: Install podman-compose from pip
+  pip:
+    name: podman-compose
+    version: "{{ podman_compose_version_pip | default(omit) }}"
+  when: podman_compose_install_method == 'pip'

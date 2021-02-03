@@ -1,0 +1,5 @@
+---
+podman_compose_install_method: "git"
+podman_compose_version_git: "devel"
+podman_compose_version_pip: ""
+podman_compose_path: /usr/local/bin/podman-compose

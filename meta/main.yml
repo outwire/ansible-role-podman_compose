@@ -1,0 +1,22 @@
+---
+galaxy_info:
+  role_name: podman_compose
+  author: outwire
+  description: Install podman-compose
+  license: MIT
+  min_ansible_version: 2.1
+  platforms:
+    - name: Debian
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+  galaxy_tags:
+    - podman
+    - compose
+
+dependencies: []
